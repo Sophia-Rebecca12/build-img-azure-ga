@@ -18,7 +18,7 @@ FROM nikolaik/python-nodejs:python3.10-nodejs18-slim
 #FROM nikolaik/python-nodejs:python3.7.3-nodejs12-alpine
 ENV NODE_ENV=production
 
-MAINTAINER ypoint
+# MAINTAINER ypoint
 #Installation
 RUN python -m pip install -U --user ortools
 # RUN pip install ortools
