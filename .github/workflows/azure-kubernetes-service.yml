@@ -23,7 +23,7 @@ jobs:
     - name:  repo checkout
       uses: actions/checkout@v2  
       with:
-          repository: Sophia-Rebecca12/build-img-azure-ga
+          repository: Sophia-Rebecca12/
            
     
     
