@@ -1,7 +1,7 @@
 name: test
 
 on: [push]
-
+      
 # Environment variables available to all jobs and steps in this workflow
 env:
   REGISTRY_NAME: vssrepo
@@ -17,6 +17,11 @@ jobs:
     steps:
     - uses: actions/checkout@main
     
+    - name:  repo checkout
+      uses: actions/checkout@v2  
+      with:
+          repository: Sophia-Rebecca12/build-img-azure-ga
+    
     # Connect to Azure Container Registry (ACR)
     - uses: azure/docker-login@v1
       with:
@@ -28,7 +33,7 @@ jobs:
     - run: |
         docker build . -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:${{ github.sha }}
         docker push ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:${{ github.sha }}
-      working-directory: ./<path-to-Dockerfile-directory>
+      working-directory: ./Dockerfile
     
     # Set the target Azure Kubernetes Service (AKS) cluster. 
     - uses: azure/aks-set-context@v1
