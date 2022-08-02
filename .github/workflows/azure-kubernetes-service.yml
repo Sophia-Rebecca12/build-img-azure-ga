@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-       dir: [ './Dockerfile' ]
+       dir: [ 'Dockerfile' ]
     steps:
     - uses: actions/checkout@main
     
