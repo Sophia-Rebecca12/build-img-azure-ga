@@ -11,8 +11,7 @@ var client = new AWS.SecretsManager({
   region: region,
 //   accessKeyId: process.env.accessKeyId,
 //   secretAccessKey: process.env.secretAccessKey
- //  accessKeyId: "AKIA3O5ND3OFW3FN6EPM",
- //  secretAccessKey: "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"
+
 });
 client.getSecretValue({ SecretId: secretName }, function (err, data) {
   if (err) {
