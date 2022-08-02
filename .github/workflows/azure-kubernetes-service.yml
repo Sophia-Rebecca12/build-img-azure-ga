@@ -18,13 +18,7 @@ jobs:
       matrix:
        dir: [ 'Dockerfile' ]
     steps:
-    - uses: actions/checkout@main
-    
-    - name:  repo checkout
-      uses: actions/checkout@v2  
-      with:
-          repository: Sophia-Rebecca12/build-img-azure-ga
-           
+    - uses: actions/checkout@main         
     
     
     # Connect to Azure Container Registry (ACR)
