@@ -14,13 +14,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        dir: [ './Dockerfile/' ]
-    permissions:
-      contents: write
     steps:
-    - uses: actions/checkout@main         
+    - uses: actions/checkout@v2       
     
     
     # Connect to Azure Container Registry (ACR)
@@ -34,7 +29,7 @@ jobs:
     - run: |
         docker build . -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:${{ github.sha }}
         docker push ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:${{ github.sha }}
-      working-directory: ${{ matrix.dir }}
+      working-directory: ./Dockerfile
     
     # Set the target Azure Kubernetes Service (AKS) cluster. 
     - uses: azure/aks-set-context@v1
