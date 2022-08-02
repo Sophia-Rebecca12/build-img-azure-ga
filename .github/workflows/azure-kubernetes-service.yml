@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-       dir: [ 'Sophia-Rebecca12/build-img-azure-ga/Dockerfile' ]
+       dir: [ 'Dockerfile' ]
     steps:
     - uses: actions/checkout@main
     
