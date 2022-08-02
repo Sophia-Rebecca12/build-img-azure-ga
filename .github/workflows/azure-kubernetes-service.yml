@@ -16,14 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-       dir: [ 'Dockerfile' ]
+       dir: [ 'Sophia-Rebecca12/build-img-azure-ga/Dockerfile' ]
     steps:
     - uses: actions/checkout@main
     
     - name:  repo checkout
       uses: actions/checkout@v2  
       with:
-          repository: Sophia-Rebecca12/
+          repository: Sophia-Rebecca12/build-img-azure-ga
            
     
     
