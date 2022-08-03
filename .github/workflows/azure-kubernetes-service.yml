@@ -1,9 +1,9 @@
 name: test
 
-on:
-  push:
-    branches:
-    - main
+on: [push]
+#   push:
+#     branches:
+#     - main
       
 # Environment variables available to all jobs and steps in this workflow
 env:
