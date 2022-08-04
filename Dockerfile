@@ -6,7 +6,7 @@
 # CMD ["node", "app.js"]
 
 FROM node:16-alpine
-#ENV NODE_ENV=production
+ENV NODE_ENV=production
 
 #MAINTAINER ypoint
 
@@ -17,6 +17,6 @@ COPY . ./
 
 RUN npm i
 
-#RUN npm i --only=production
+RUN npm i --only=production
 
 CMD [ "node", "app.js" ]
