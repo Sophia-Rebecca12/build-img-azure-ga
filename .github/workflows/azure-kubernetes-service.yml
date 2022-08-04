@@ -59,8 +59,12 @@ jobs:
     - uses: azure/k8s-deploy@v1
       with:
         manifests: |
-          github.com/Sophia-Rebecca12/build-img-azure-ga/.github/manifests/deployment.yaml
-          github.com/Sophia-Rebecca12/build-img-azure-ga/.github/manifests/service.yaml
+          uses: actions/checkout@v2  
+          with:
+          repository:|
+               Sophia-Rebecca12/build-img-azure-ga/.github/manifests/deployment.yaml
+               Sophia-Rebecca12/build-img-azure-ga/.github/manifests/service.yaml
+   
         images: |
           ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:${{ github.sha }}
         imagepullsecrets: |
