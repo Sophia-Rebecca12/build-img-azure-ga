@@ -17,6 +17,6 @@ COPY . ./
 
 RUN npm i
 
-RUN npm i --only=production
+#RUN npm i --only=production
 
-CMD [ "node", "server.js" ]
+CMD [ "node", "app.js" ]
