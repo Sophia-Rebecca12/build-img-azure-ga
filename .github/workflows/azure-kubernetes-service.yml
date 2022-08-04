@@ -59,7 +59,6 @@ jobs:
     - uses: azure/k8s-deploy@v1
       with:
         manifests: |
-          repository:|
                /home/runner/work/build-img-azure-ga/build-img-azure-ga/.github/manifests/deployment.yaml
                /home/runner/work/build-img-azure-ga/build-img-azure-ga/.github/manifests/service.yaml
    
