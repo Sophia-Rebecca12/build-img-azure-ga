@@ -5,18 +5,21 @@
 # EXPOSE 3000
 # CMD ["node", "app.js"]
 
-FROM node:16-alpine
-ENV NODE_ENV=production
+# FROM node:16-alpine
+# ENV NODE_ENV=production
 
-#MAINTAINER ypoint
+# #MAINTAINER ypoint
 
-# Create app directory
-RUN mkdir -p /opt/app
-WORKDIR /opt/app
-COPY . ./
+# # Create app directory
+# RUN mkdir -p /opt/app
+# WORKDIR /opt/app
+# COPY . ./
 
-RUN npm i
+# RUN npm i
 
-RUN npm i --only=production
+# RUN npm i --only=production
 
-CMD [ "node", "app.js" ]
+# CMD [ "node", "app.js" ]
+
+FROM nginx
+COPY static-html-directory /usr/share/nginx/html
