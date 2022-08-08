@@ -1,0 +1,91 @@
+June
+
+11th
+
+understanding pipelines setup
+
+12th
+
+Prem ,shiva and Alok
+
+ Testing on access provided
+ Discussed on doubts on pipelines
+ Requested for cicd
+ Understanding the enviornments and architecture
+
+13th 
+
+Understanding 
+- network architecture 
+- gateway servers
+- pipeline repos
+- resolving VM acess
+
+14th
+
+Discussion on
+
+Sass Service with waseem
+Provided Elastic search log access by Basavaraj
+
+15th 
+
+Understanding the Kubernetes cluster
+
+
+18th
+
+Requested the following access for the following
+- Dockerfile
+- Palaato firewall
+- OCR VM access
+
+19th
+
+- Understanding data drives mounting
+
+25th
+
+Discussion on:
+- firewalls 
+- data transfer
+- Requestion cluster action access by Sharad
+
+26th 
+
+Discussion on:
+- Elastic search breakup pricing
+
+27th 
+
+Discussion on:
+- Elastic search breakup pricing(size varient comparison by kibana service)
+
+28th
+
+- Requested access for performance env VM
+- Blocker of gateway VM access
+
+29th
+
+- Proposal 1 presented Basavaraj and Prem
+
+
+july
+
+1st
+
+Feedback on Proposal 1
+
+
+2nd
+
+Discussion on VM details
+
+3rd
+
+- Discussion on Elastic search plan
+- Requested for Propsal meet with Mubarak and Sonu
+
+
+
